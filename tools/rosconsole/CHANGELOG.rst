@@ -2,6 +2,16 @@
 Changelog for package rosconsole
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.13.6 (2018-02-05)
+-------------------
+* rename log macro argument from rate to period (`#1318 <https://github.com/ros/ros_comm/issues/1318>`_)
+
+1.13.5 (2017-11-09)
+-------------------
+
+1.13.4 (2017-11-02)
+-------------------
+
 1.13.3 (2017-10-25)
 -------------------
 * replace 'while(0)' with 'while(false)' to avoid warnings (`#1179 <https://github.com/ros/ros_comm/issues/1179>`_)

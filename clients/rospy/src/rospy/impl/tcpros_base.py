@@ -138,7 +138,7 @@ class TCPServer(object):
     def start(self):
         """Runs the run() loop in a separate thread"""
         t = threading.Thread(target=self.run, args=())
-        t.setDaemon(True)
+        t.daemon = True
         t.start()
 
     def run(self):
@@ -570,7 +570,7 @@ class TCPROSTransport(Transport):
                 # FATAL: no reconnection as error is unknown
                 self.close()
             elif not isinstance(e, socket.timeout) and e.errno not in [
-                    errno.ENETDOWN, e.ENETUNREACH, errno.ENETRESET,
+                    errno.ENETDOWN, errno.ENETUNREACH, errno.ENETRESET,
                     errno.ECONNABORTED, errno.ETIMEDOUT, errno.EHOSTDOWN, errno.EHOSTUNREACH]:
                 # reconnect in follow cases, otherwise close the socket:
                 # 1. socket.timeout: on timeouts caused by delays on wireless links

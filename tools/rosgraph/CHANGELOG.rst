@@ -2,6 +2,16 @@
 Changelog for package rosgraph
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.13.6 (2018-02-05)
+-------------------
+* fix search strategy for python_logging config (`#1292 <https://github.com/ros/ros_comm/issues/1292>`_)
+
+1.13.5 (2017-11-09)
+-------------------
+
+1.13.4 (2017-11-02)
+-------------------
+
 1.13.3 (2017-10-25)
 -------------------
 * use defined error codes rather than hardcoded integers (`#1174 <https://github.com/ros/ros_comm/issues/1174>`_)

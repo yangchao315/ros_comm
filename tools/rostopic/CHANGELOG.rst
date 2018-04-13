@@ -2,6 +2,17 @@
 Changelog for package rostopic
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.13.6 (2018-02-05)
+-------------------
+* add --tcpnodelay TransportHint option to hz and delay commands (`#1296 <https://github.com/ros/ros_comm/issues/1296>`_)
+* remove unreachable exceptions (`#1260 <https://github.com/ros/ros_comm/issues/1260>`_)
+
+1.13.5 (2017-11-09)
+-------------------
+
+1.13.4 (2017-11-02)
+-------------------
+
 1.13.3 (2017-10-25)
 -------------------
 

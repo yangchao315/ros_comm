@@ -2,6 +2,16 @@
 Changelog for package topic_tools
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.13.6 (2018-02-05)
+-------------------
+* replace deprecated syntax (backticks with repr()) (`#1259 <https://github.com/ros/ros_comm/issues/1259>`_)
+
+1.13.5 (2017-11-09)
+-------------------
+
+1.13.4 (2017-11-02)
+-------------------
+
 1.13.3 (2017-10-25)
 -------------------
 * add initial_topic param (`#1199 <https://github.com/ros/ros_comm/issues/1199>`_)

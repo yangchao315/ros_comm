@@ -2,6 +2,20 @@
 Changelog for package rospy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.13.6 (2018-02-05)
+-------------------
+* raise the correct exception from AnyMsg.serialize (`#1311 <https://github.com/ros/ros_comm/issues/1311>`_)
+* remove unreachable exceptions (`#1260 <https://github.com/ros/ros_comm/issues/1260>`_)
+* replace Thread.setDaemon() using new API (`#1276 <https://github.com/ros/ros_comm/issues/1276>`_)
+
+1.13.5 (2017-11-09)
+-------------------
+* fix regresssion from 1.13.3 (`#1224 <https://github.com/ros/ros_comm/issues/1224>`_)
+
+1.13.4 (2017-11-02)
+-------------------
+* fix uri in message (`#1213 <https://github.com/ros/ros_comm/issues/1213>`_, regression from 1.13.3)
+
 1.13.3 (2017-10-25)
 -------------------
 * change rospy.Rate hz type from int to float (`#1177 <https://github.com/ros/ros_comm/issues/1177>`_)

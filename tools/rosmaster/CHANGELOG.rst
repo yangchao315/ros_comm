@@ -2,6 +2,18 @@
 Changelog for package rosmaster
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.13.6 (2018-02-05)
+-------------------
+* add TCP_INFO availability check (`#1211 <https://github.com/ros/ros_comm/issues/1211>`_)
+* replace Thread.setDaemon() using new API (`#1276 <https://github.com/ros/ros_comm/issues/1276>`_)
+
+1.13.5 (2017-11-09)
+-------------------
+
+1.13.4 (2017-11-02)
+-------------------
+* catch exception with `socket.TCP_INFO` on WSL (`#1212 <https://github.com/ros/ros_comm/issues/1212>`_, regression from 1.13.1)
+
 1.13.3 (2017-10-25)
 -------------------
 * add --set-master-logger-level option for 'rosmaster' to output LOG_API (`#1180 <https://github.com/ros/ros_comm/issues/1180>`_)

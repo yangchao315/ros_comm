@@ -478,7 +478,6 @@ namespace XmlRpc {
     // might reserve too much, we'll shrink later
     _value.asBinary = new BinaryData(base64DecodedSize(encoded_size), '\0');
 
-    std::stringstream buffer;
     base64::decoder decoder;
     std::size_t size = decoder.decode(&valueXml[*offset], encoded_size, &(*_value.asBinary)[0]);
     _value.asBinary->resize(size);
@@ -654,10 +653,10 @@ namespace XmlRpc {
 
 
 // ostream
-std::ostream& operator<<(std::ostream& os, XmlRpc::XmlRpcValue& v) 
-{ 
+std::ostream& operator<<(std::ostream& os, const XmlRpc::XmlRpcValue& v)
+{
   // If you want to output in xml format:
-  //return os << v.toXml(); 
+  //return os << v.toXml();
   return v.write(os);
 }
 
